@@ -23,7 +23,7 @@ public class ArraySolver {
             for (int iteration = 0; iteration < k; iteration++) {
                 Double lowestDistanceFromX = Math.abs(inputArray[0] - x);
                 int bestIndex = 0;
-                for (int i = 0; i < inputArray.length; i++) {
+                for (int i = 1; i < inputArray.length; i++) {
                     Double currentDistanceFromX = Math.abs(inputArray[i] - x);
                     if (currentDistanceFromX < lowestDistanceFromX) {
                         lowestDistanceFromX = currentDistanceFromX;
