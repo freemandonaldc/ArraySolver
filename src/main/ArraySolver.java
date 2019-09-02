@@ -6,6 +6,14 @@ import java.util.Collections;
 import java.util.List;
 
 public class ArraySolver {
+    /**
+     * Runtime for the solver method is less than k * inputArray.length (except where k = 1, since inputArray.length decreases with k increments.)
+     * Runtime for the solver method is always less than inputArray.length squared (except where inputArray.length = 1)
+     *
+     * Worst case runtime for this solver method occurs when k is one less than inputArray.length. (Runtime approaches but never hits inputArray.length squared.)
+     *
+     * Best case runtime complexity for this solver is 1, where k is >= inputArray.length.
+     */
     public List<Double> solve(Double[] inputArray, double x, int k) {
         validate(k);
         List<Double> resultArrayList = new ArrayList<>();
