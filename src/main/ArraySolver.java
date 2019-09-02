@@ -1,6 +1,7 @@
 package main;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class ArraySolver {
@@ -10,6 +11,10 @@ public class ArraySolver {
         List<Double> resultArrayList = new ArrayList<>();
 
         for(int iteration = 0; iteration < k; iteration++) {
+            if(inputArray.length <=0) {
+                break;
+            }
+
             Double lowestDistanceFromX = Math.abs(inputArray[0] - x);
             int bestIndex = 0;
 
@@ -24,6 +29,7 @@ public class ArraySolver {
             inputArray = removeIndexFromArray(inputArray, bestIndex);
         }
 
+        Collections.sort(resultArrayList);
         return resultArrayList;
     }
 
