@@ -35,11 +35,11 @@ public class ArraySolverTest {
 
     @Test
     public void solve_negativeNumberInInputArray_returnsCorrectOutput() {
-        double x = 5;
-        int k = 3;
+        double x = 20;
+        int k = 2;
         List<Double> output = arraySolver.solve(inputArrayWithNegatives, x, k);
 
-        ArrayList<Double> expectedResult = new ArrayList<>(Arrays.asList(-10.0, 17.0, 20.0));
+        ArrayList<Double> expectedResult = new ArrayList<>(Arrays.asList(17.0, 20.0));
         assertEquals(output, expectedResult);
     }
 
